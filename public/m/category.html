@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘分类</title>
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/category.less">
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <!-- <span>我的乐淘</span> -->
+        <a href="index.html" class="fa-arrow-left"></a>
+        <form action="">
+            <input type="search">
+        </form>
+        <a href="search.html" class="fa fa-search"></a>
+    </header>
+    <!-- 以上头部区域代码 -->
+
+    <main id="main">
+
+        <div class="category-left">
+            <ul class="left-ul">
+
+            </ul>
+        </div>
+
+        <!-- <div class="category-right">
+            <div class="mui-row">
+            </div>
+        </div> -->
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="category-right">
+                    <div class="mui-row">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- 以上为主体部分 -->
+
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3">
+                <a class="fa fa-home" href="index.html">首页</a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a class="fa fa-bars active" href="category.html">分类</a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a class="fa fa-shopping-cart" href="">首页</a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a class="fa fa-user" href="">首页</a>
+            </div>
+        </div>
+    </footer>
+    <!-- 以上为底部区域代码 -->
+
+    <script id="categoryName" type="text/html">
+        {{each rows as value i}}
+            <li class="active">
+                <a href="#" data-id="{{value.id}}">{{value.categoryName}}</a>
+            </li>
+        {{/each}}
+    </script>
+    <script id="categoryContent" type="text/html">
+        {{each rows as value i}}
+            <div class="mui-col-xs-4">
+                <a href="#">
+                    <img src="{{value.brandLogo}}" alt="">
+                    <p>{{value.brandName}}</p>
+                </a>
+            </div>
+        {{/each}}
+    </script>
+    <!-- 以上为模板部分 -->
+
+    <script src="./lib/zepto/zepto.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/category.js"></script>
+</body>
+
+</html>

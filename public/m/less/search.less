@@ -1,0 +1,69 @@
+@import "./base.less";
+
+#main {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	// height: 100%;
+    // background-color: #ccc;
+    >form {
+        position: relative;
+        padding: 0px 10px;
+        padding-right: 64px;
+        margin-top: 10px;
+        height: 30px;
+        >input {
+            text-align: left;
+            // margin-right: 60px;
+            background-color: #fff;
+            // color: #666;
+            border: 1px solid @main-color;
+            height: 30px;
+            font-size: 14px;
+            border-radius: 5px 0 0 5px;
+        }
+        >button {
+            // float: right;
+            // width: 60px;
+            height: 30px;
+            line-height: 0px;
+            vertical-align: middle;
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            right: 10px;  
+            background-color: @main-color;  
+            color: #fff;  
+            border-radius: 0 5px 5px 0;      
+        }
+    }
+    >.searchHistory {
+        padding: 10px;
+        overflow: hidden;
+        >i {
+            float: left;
+            color: #666;
+            font-size: 12px;
+        }
+        >a {
+            float: right;
+            color: #666;
+            font-size: 12px;
+        }
+    }
+    >ul {
+        margin: 10px;
+        border: 1px solid #ccc;
+        >li {
+            padding: 10px 12px;
+            >a {
+                font-size: 14px;
+                i {
+                    // width: 10px;
+                    float: right;
+                    font-weight: normal;
+                    color: #666;
+                }
+            }
+        }
+    }
+}

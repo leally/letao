@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘搜索</title>
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/search.less">
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html" class="fa-arrow-left"></a>
+        <span>搜索中心</span>
+    </header>
+    <!-- 以上头部区域代码 -->
+
+    <main id="main">
+        <form action="">
+            <input type="search" placeholder="搜索你喜欢的商品">
+            <button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">搜索</button>
+        </form>
+        <div class="searchHistory">
+            <i>搜索历史</i>
+            <a href="#">
+                <i class="fa-trash"></i>
+                <span>清空记录</span>
+            </a>
+        </div>
+        <ul class="mui-table-view">
+            <!-- <li class="mui-table-view-cell">
+                <a class="#">Item 1<i class="fa-close"></i>
+                </a>
+            </li> -->
+        </ul>
+    </main>
+
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3">
+                <a class="fa fa-home" href="index.html">首页</a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a class="fa fa-bars" href="category.html">分类</a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a class="fa fa-shopping-cart" href="">首页</a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a class="fa fa-user" href="">首页</a>
+            </div>
+        </div>
+    </footer>
+    <!-- 以上为底部区域代码 -->
+    <script id="historyTmp" type="text/html">
+        {{each history as value i}}
+        <li class="mui-table-view-cell">
+            <a class="#">{{value}}<i data-word="{{value}}" class="fa-close"></i>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script src="./lib/zepto/zepto.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/search.js"></script>
+</body>
+
+</html>

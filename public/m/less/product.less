@@ -1,0 +1,100 @@
+@import "base.less";
+
+#main {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	// height: 100%;
+    // background-color: #ccc;
+    >form {
+        position: relative;
+        padding: 0px 10px;
+        padding-right: 64px;
+        margin-top: 10px;
+        height: 30px;
+        >input {
+            text-align: left;
+            // margin-right: 60px;
+            background-color: #fff;
+            // color: #666;
+            border: 1px solid @main-color;
+            height: 30px;
+            font-size: 14px;
+            border-radius: 5px 0 0 5px;
+        }
+        >button {
+            // float: right;
+            // width: 60px;
+            height: 30px;
+            line-height: 0px;
+            vertical-align: middle;
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            right: 10px;  
+            background-color: @main-color;  
+            color: #fff;  
+            border-radius: 0 5px 5px 0;      
+        }
+    }
+    >.sort-title {
+        margin-top: 15px;
+        >.mui-row {
+            height: 30px;
+            background-color: #ccc;
+            >div {
+                >a {
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 30px;
+                    >i {
+                        font-size: 14px;
+                        font-weight: bold;
+                        margin-left: 2px;
+                    }
+                }
+            }
+        }
+    }
+    #produce {
+        width: 100%;
+        padding: 0px 10px;
+        >.title {
+            width: 100%;
+        }
+        >.mui-row {
+            >div {
+                margin-top: 10px;
+                padding: 0px 5px;
+                >.produce {
+                    box-shadow: 0px 0px 5px #ccc;
+                    width: 100%;
+                    text-align: center;
+                    >a.image {
+                        width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    >p {
+                        font-size: 14px;
+                        line-height: 16px;
+                        height: 32px;
+                        overflow: hidden;
+                    }
+                    i {
+                        font-size: 12px;
+                        color: #f00;
+                    }
+                    del {
+                        font-size: 12px;
+                    }
+                    a.mui-btn {
+                        background-color: @main-color;
+                        color: #fff;
+                        margin: 16px auto;
+                    }
+                }
+            }
+        }
+    }
+}

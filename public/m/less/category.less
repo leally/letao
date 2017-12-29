@@ -1,0 +1,84 @@
+@import "./base.less";
+
+#main {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	height: 100%;
+    background-color: #ccc;
+    .category-left {
+        width: 80px;
+        float: left;
+        >.left-ul {
+            >li {
+                &.active {
+                    background-color: #ccc;
+                }
+                >a {
+                    width: 100%;
+                    text-align: center;
+                    line-height: 45px;
+                    height: 45px;
+                    border-right: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+              
+    // .category-right {
+    //     padding: 10px;
+    //     margin-left: 80px;
+    //     overflow: hidden;
+    //     >.mui-row {
+    //         background-color: #fff;
+    //         >div {
+    //             >a {
+    //                 background-color: #fff;
+    //                 width: 100%;
+    //                 text-align: center;
+    //                 >img {
+    //                     width: 100%;
+    //                 }
+    //                 >p {
+    //                     // margin-bottom: 0px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    >.mui-scroll-wrapper {
+        // margin: 45px 0px 45px 80px;
+        top: 45px;
+        bottom: 45px;
+        left: 80px;
+        width: auto;
+        overflow: hidden;
+        >.mui-scroll {
+            position: relative;
+            .category-right {
+                width: 100%;
+                padding: 10px;
+                overflow: hidden;
+                >.mui-row {
+                    width: 100%;
+                    background-color: #fff;
+                    >div {
+                        >a {
+                            background-color: #fff;
+                            width: 100%;
+                            text-align: center;
+                            >img {
+                                width: 100%;
+                            }
+                            >p {
+                                // margin-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
